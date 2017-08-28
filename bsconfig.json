@@ -1,0 +1,8 @@
+{
+  "name": "reason-react-todo",
+  "reason": { "react-jsx": 2 },
+  "bs-dependencies": ["reason-react"],
+  "bs-dev-dependencies": ["bs-jest"],
+  "bsc-flags": ["-bs-super-errors"],
+  "sources": [{ "dir": "src" }]
+}

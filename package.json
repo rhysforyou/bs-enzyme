@@ -1,0 +1,40 @@
+{
+  "name": "bs-enzyme",
+  "version": "0.1.0",
+  "description": "Bucklescript bindings for Enzyme",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "build": "bsb -make-world"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rpowelll/bs-enzyme.git"
+  },
+  "keywords": ["bucklescript", "enzyme", "testing"],
+  "author": "Rhys Powell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rpowelll/bs-enzyme/issues"
+  },
+  "homepage": "https://github.com/rpowelll/bs-enzyme#readme",
+  "devDependencies": {
+    "bs-jest": "^0.1.0",
+    "bs-platform": "^1.9.1",
+    "jest": "^20.0.4",
+    "reason-react": "^0.2.3"
+  },
+  "dependencies": {
+    "enzyme": "^2.9.1",
+    "react-dom": "^15.6.1",
+    "react-test-renderer": "^15.6.1"
+  },
+  "peerDependencies": {
+    "reason-react": ">=0.2.1",
+    "bs-platform": ">=1.9.0"
+  },
+  "jest": {
+    "moduleFileExtensions": ["re", "js", "ml"],
+    "testMatch": ["lib/js/src/**/*_test.re"]
+  }
+}
