@@ -1,5 +1,5 @@
 type shallowWrapper;
-type node;
+type node = ReasonReact.reactElement;
 type selector = string;
 type predicate = shallowWrapper => bool;
 
