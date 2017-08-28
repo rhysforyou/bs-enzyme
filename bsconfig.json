@@ -1,5 +1,7 @@
 {
   "name": "bs-jest",
+  "bs-dependencies": ["reason-react"],
+  "bs-dev-dependencies": ["bs-jest", "bs-enzyme"],
   "bsc-flags": ["-bs-super-errors"],
   "sources": [{ "dir": "src" }]
 }
