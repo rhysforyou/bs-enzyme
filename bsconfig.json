@@ -1,6 +1,5 @@
 {
-  "name": "reason-react-todo",
-  "reason": { "react-jsx": 2 },
+  "name": "bs-jest",
   "bsc-flags": ["-bs-super-errors"],
   "sources": [{ "dir": "src" }]
 }
