@@ -63,4 +63,4 @@ external name : shallowWrapper => string = "name" [@@bs.send];
 external forEach : (shallowWrapper => unit) => shallowWrapper = "forEach" [@@bs.send.pipe: shallowWrapper];
 external map : (shallowWrapper => 'a) => array 'a = "forEach" [@@bs.send.pipe: shallowWrapper];
 
-external getLength : shallowWrapper => int = "length" [@@bs.get];
+external length : shallowWrapper => int = "length" [@@bs.get];
