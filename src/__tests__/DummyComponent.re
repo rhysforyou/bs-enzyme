@@ -18,6 +18,11 @@ let make title::title handleClick::handleClick _children => {
         <button id="click-me" onClick=handleClick>
           (se (state.clicked ? "I've been clicked!" : "Click Me!"))
         </button>
+        <ul id="list">
+          <li>(se "One")</li>
+          <li>(se "Two")</li>
+          <li>(se "Three")</li>
+        </ul>
       </div>
     </div>
   }

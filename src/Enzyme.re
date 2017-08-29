@@ -62,5 +62,7 @@ external name : shallowWrapper => string = "name" [@@bs.send];
 
 external forEach : (shallowWrapper => unit) => shallowWrapper = "forEach" [@@bs.send.pipe: shallowWrapper];
 external map : (shallowWrapper => 'a) => array 'a = "forEach" [@@bs.send.pipe: shallowWrapper];
+external foldLeft : ('a => shallowWrapper => 'a) => 'a => 'a = "reduce" [@@bs.send.pipe: shallowWrapper];
+external foldRight : ('a => shallowWrapper => 'a) => 'a => 'a = "reduceRight" [@@bs.send.pipe: shallowWrapper];
 
 external length : shallowWrapper => int = "length" [@@bs.get];

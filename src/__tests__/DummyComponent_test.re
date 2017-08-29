@@ -8,6 +8,11 @@ let header wrapper =>
   |> Enzyme.find "#header"
   |> Enzyme.first;
 
+let listItems wrapper =>
+  wrapper
+  |> Enzyme.find "#list"
+  |> Enzyme.children;
+
 describe "DummyComponent" (fun () => {
   open Expect;
 
@@ -50,8 +55,25 @@ describe "DummyComponent" (fun () => {
     let title = "A test title";
     let wrapper = setup title::title ();
     let state = Enzyme.jsState wrapper;
-    Js.log state;
 
     expect state##reasonState |> toContain 0;
+  });
+
+  test "folds left properly" (fun () => {
+    let title = "A test title";
+    let wrapper = setup title::title ();
+    let items = wrapper |> listItems;
+    let foldNode text node => text ^ Enzyme.text node;
+    let result =  Enzyme.foldLeft foldNode "" items;
+    expect result |> toBe "OneTwoThree";
+  });
+
+  test "folds right properly" (fun () => {
+    let title = "A test title";
+    let wrapper = setup title::title ();
+    let items = wrapper |> listItems;
+    let foldNode text node => text ^ Enzyme.text node;
+    let result =  Enzyme.foldRight foldNode "" items;
+    expect result |> toBe "ThreeTwoOne";
   });
 });
