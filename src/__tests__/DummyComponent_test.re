@@ -49,7 +49,7 @@ describe "DummyComponent" (fun () => {
   test "has the expected initialState" (fun () => {
     let title = "A test title";
     let wrapper = setup title::title ();
-    let state = Enzyme.state wrapper;
+    let state = Enzyme.jsState wrapper;
     Js.log state;
 
     expect state##reasonState |> toContain 0;
