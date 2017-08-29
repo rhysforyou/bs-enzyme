@@ -34,13 +34,6 @@ external getNodes : shallowWrapper => array node = "getNodes" [@@bs.send];
 external at : int => shallowWrapper = "at" [@@bs.send.pipe: shallowWrapper];
 external first : shallowWrapper => shallowWrapper = "first" [@@bs.send];
 external last : shallowWrapper => shallowWrapper = "last" [@@bs.send];
-external jsState : shallowWrapper => Js.t {..} = "state" [@@bs.send];
-external jsStateFor : string => Js.t {..} = "state" [@@bs.send.pipe: shallowWrapper];
-external jsContext : shallowWrapper => Js.t {..} = "context" [@@bs.send];
-external jsContextFor : string => Js.t {..} = "context" [@@bs.send.pipe: shallowWrapper];
-external jsProps : shallowWrapper => Js.t {..} = "props" [@@bs.send];
-external jsPropFor : string => Js.t {..} = "prop" [@@bs.send.pipe: shallowWrapper];
-external key : shallowWrapper => string = "key" [@@bs.send];
 
 /* TODO: Find a better way to do this */
 external simulate : string  => unit = "simulate" [@@bs.send.pipe: shallowWrapper];
@@ -50,9 +43,16 @@ external simulate3 : string => 'a => 'b => 'c => unit = "simulate" [@@bs.send.pi
 external simulate4 : string => 'a => 'b => 'c => 'd => unit = "simulate" [@@bs.send.pipe: shallowWrapper];
 external simulateMany : string => args::(array 'a) => unit = "simulate" [@@bs.splice] [@@bs.send.pipe: shallowWrapper];
 
+external jsState : shallowWrapper => Js.t {..} = "state" [@@bs.send];
+external jsStateFor : string => Js.t {..} = "state" [@@bs.send.pipe: shallowWrapper];
 external setJsState : Js.t {..} => unit = "setState" [@@bs.send.pipe: shallowWrapper];
+external jsContext : shallowWrapper => Js.t {..} = "context" [@@bs.send];
+external jsContextFor : string => Js.t {..} = "context" [@@bs.send.pipe: shallowWrapper];
 external setJsContext : Js.t {..} => unit = "setContext" [@@bs.send.pipe: shallowWrapper];
+external jsProps : shallowWrapper => Js.t {..} = "props" [@@bs.send];
+external jsPropFor : string => Js.t {..} = "prop" [@@bs.send.pipe: shallowWrapper];
 external setJsProps : Js.t {..} => unit = "setProps" [@@bs.send.pipe: shallowWrapper];
+external key : shallowWrapper => string = "key" [@@bs.send];
 
 external instance : shallowWrapper => node = "instance" [@@bs.send];
 external update : shallowWrapper => unit = "update" [@@bs.send];
