@@ -54,6 +54,8 @@ external jsPropFor : string => Js.t {..} = "prop" [@@bs.send.pipe: shallowWrappe
 external setJsProps : Js.t {..} => unit = "setProps" [@@bs.send.pipe: shallowWrapper];
 external key : shallowWrapper => string = "key" [@@bs.send];
 
+let state shallowWrapper: 'state => (jsState shallowWrapper)##reasonState;
+
 external instance : shallowWrapper => node = "instance" [@@bs.send];
 external update : shallowWrapper => unit = "update" [@@bs.send];
 external debug : shallowWrapper => string = "debug" [@@bs.send];

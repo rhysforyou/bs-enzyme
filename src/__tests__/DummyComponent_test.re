@@ -51,12 +51,10 @@ describe "DummyComponent" (fun () => {
     expect (Enzyme.equals expectedNode header) |> toBe true;
   });
 
-  test "has the expected initialState" (fun () => {
-    let title = "A test title";
-    let wrapper = setup title::title ();
-    let state = Enzyme.jsState wrapper;
-
-    expect state##reasonState |> toContain 0;
+  test "initially has its `clicked` state set to false" (fun () => {
+    let wrapper = setup ();
+    let { clicked }: DummyComponent.state = Enzyme.state wrapper;
+    expect clicked |> toBe false;
   });
 
   test "folds left properly" (fun () => {
