@@ -1,6 +1,6 @@
 {
   "name": "bs-enzyme",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Bucklescript bindings for Enzyme",
   "scripts": {
     "test": "jest --watch",
@@ -12,7 +12,11 @@
     "type": "git",
     "url": "git+https://github.com/rpowelll/bs-enzyme.git"
   },
-  "keywords": ["bucklescript", "enzyme", "testing"],
+  "keywords": [
+    "bucklescript",
+    "enzyme",
+    "testing"
+  ],
   "author": "Rhys Powell",
   "license": "MIT",
   "bugs": {
@@ -36,6 +40,8 @@
     "bs-platform": ">=1.9.0"
   },
   "jest": {
-    "testMatch": ["**/src/**/*_test.js"]
+    "testMatch": [
+      "**/src/**/*_test.js"
+    ]
   }
 }
