@@ -42,8 +42,7 @@ describe "DummyComponent" (fun () => {
 
   test "has the expected #header" (fun () => {
     let title = "A test title";
-    let wrapper = setup title::title ();
-    let header = header wrapper;
+    let header = setup title::title () |> header;
     let expectedNode = <div id="header">
       <h1>(ReasonReact.stringToElement title)</h1>
     </div>;
@@ -58,20 +57,14 @@ describe "DummyComponent" (fun () => {
   });
 
   test "folds left properly" (fun () => {
-    let title = "A test title";
-    let wrapper = setup title::title ();
-    let items = wrapper |> listItems;
-    let foldNode text node => text ^ Enzyme.text node;
-    let result =  Enzyme.foldLeft foldNode "" items;
+    let items = setup () |> listItems;
+    let result =  Enzyme.foldLeft (fun text node => text ^ Enzyme.text node) "" items;
     expect result |> toBe "OneTwoThree";
   });
 
   test "folds right properly" (fun () => {
-    let title = "A test title";
-    let wrapper = setup title::title ();
-    let items = wrapper |> listItems;
-    let foldNode text node => text ^ Enzyme.text node;
-    let result =  Enzyme.foldRight foldNode "" items;
+    let items = setup () |> listItems;
+    let result =  Enzyme.foldRight (fun text node => text ^ Enzyme.text node) "" items;
     expect result |> toBe "ThreeTwoOne";
   });
 });
