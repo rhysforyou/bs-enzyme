@@ -68,3 +68,13 @@ external foldLeft : ('a => shallowWrapper => 'a) => 'a => 'a = "reduce" [@@bs.se
 external foldRight : ('a => shallowWrapper => 'a) => 'a => 'a = "reduceRight" [@@bs.send.pipe: shallowWrapper];
 
 external length : shallowWrapper => int = "length" [@@bs.get];
+
+
+type adapter;
+type js_obj_with_adapter = Js.t {. adapter : adapter};
+
+external configure : js_obj_with_adapter => adapter = "configure" [@@bs.module "enzyme"];
+
+let configureEnzyme (adapter: adapter) => configure {"adapter": adapter};
+
+
