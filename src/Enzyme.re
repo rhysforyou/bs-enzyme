@@ -74,7 +74,11 @@ type adapter;
 type js_obj_with_adapter = Js.t {. adapter : adapter};
 
 external configure : js_obj_with_adapter => adapter = "configure" [@@bs.module "enzyme"];
+external react_16_adapter : unit => adapter = "enzyme-adapter-react-16" [@@bs.module] [@@bs.new];
 
 let configureEnzyme (adapter: adapter) => configure {"adapter": adapter};
+
+
+
 
 
