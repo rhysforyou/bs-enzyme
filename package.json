@@ -31,9 +31,9 @@
     "reason-react": "^0.2.3"
   },
   "dependencies": {
-    "enzyme": "^2.9.1",
-    "react-dom": "^15.6.1",
-    "react-test-renderer": "^15.6.1"
+    "enzyme": "^3.2.0",
+    "react-dom": "^16.1.1",
+    "react-test-renderer": "^16.1.1"
   },
   "peerDependencies": {
     "reason-react": ">=0.2.1",
