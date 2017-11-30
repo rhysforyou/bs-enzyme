@@ -1,15 +1,17 @@
 # bs-enzyme - [BuckleScript](https://github.com/bucklescript/bucklescript) bindings for [Enzyme](https://github.com/airbnb/enzyme) [![npm (scoped)](https://img.shields.io/npm/v/bs-enzyme.svg?style=flat-square)](https://www.npmjs.com/package/bs-enzyme)
 
-:construction: **Note:** This package is still _very_ experimental. Expect frequent, breaking changes right up until 1.0 is released. :construction:
+:construction: **Note:** This package is still _very_ experimental. Expect
+frequent, breaking changes right up until 1.0 is released. :construction:
 
 ---
 
 ## Status
 
-- Most of the `shallow` API is implemented
-- The `simulate` method is currently wrapped in multiple `simulateN` functions to handle mixed variadic arguments
-- Neither the `render` nor `mount` APIs are implemented
-- I haven't extensively tested most of the functions, so some might be broken
+* Most of the `shallow` API is implemented
+* The `simulate` method is currently wrapped in multiple `simulateN` functions
+  to handle mixed variadic arguments
+* Neither the `render` nor `mount` APIs are implemented
+* I haven't extensively tested most of the functions, so some might be broken
 
 ## Example
 
@@ -23,8 +25,8 @@ let setup ::title="Test" ::handleClick=(fun _evt => ()) () =>
 
 let header wrapper =>
   wrapper
-  |> Enzyme.find "#header"
-  |> Enzyme.first;
+  |> Enzyme.find("#header")
+  |> Enzyme.first();
 
 let listItems wrapper =>
   wrapper
@@ -64,7 +66,8 @@ describe "DummyComponent" (fun () => {
 });
 ```
 
-See more examples in the project's [tests directory](https://github.com/rpowelll/bs-enzyme/tree/master/src/__tests__).
+See more examples in the project's
+[tests directory](https://github.com/rpowelll/bs-enzyme/tree/master/src/__tests__).
 
 ## Installation
 
@@ -81,4 +84,5 @@ Then add `bs-enzyme` to `bs-dev-dependencies` in your `bsconfig.json`:
 }
 ```
 
-**Note:** If you're using this package with `bs-jest`, be sure to list `bs-enzyme` first in your dependencies.
+**Note:** If you're using this package with `bs-jest`, be sure to list
+`bs-enzyme` first in your dependencies.

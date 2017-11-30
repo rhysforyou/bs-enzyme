@@ -25,19 +25,20 @@
   "homepage": "https://github.com/rpowelll/bs-enzyme#readme",
   "devDependencies": {
     "bs-jest": "^0.1.0",
-    "bs-platform": "^1.9.1",
+    "bs-platform": "^2.1.0",
+    "enzyme-adapter-react-16": "^1.1.0",
     "jest": "^20.0.4",
-    "react": "^15.6.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
     "reason-react": "^0.2.3"
   },
   "dependencies": {
     "enzyme": "^3.2.0",
-    "react-dom": "^16.1.1",
     "react-test-renderer": "^16.1.1"
   },
   "peerDependencies": {
     "reason-react": ">=0.2.1",
-    "bs-platform": ">=1.9.0"
+    "bs-platform": ">=2.1.0"
   },
   "jest": {
     "testMatch": [
