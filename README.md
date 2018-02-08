@@ -15,7 +15,7 @@ frequent, breaking changes right up until 1.0 is released. :construction:
 
 ## Example
 
-Using the excellent [bs-jest](https://github.com/reasonml-community/bs-jest)
+Using the excellent [bs-jest](https://github.com/reasonml-community/bs-jest) and Airbnb's official [enzyme-adapter-react-16](https://github.com/airbnb/enzyme).
 
 ```reason
 open Jest;
@@ -71,8 +71,16 @@ See more examples in the project's
 
 ## Installation
 
+With npm:
+
+```sh
+npm install --save-dev bs-enzyme enzyme-adapter-react-16
 ```
-$ npm install --save-dev bs-enzyme
+
+With Yarn:
+
+```sh
+yarn add bs-enzyme enzyme-adapter-react-16
 ```
 
 Then add `bs-enzyme` to `bs-dev-dependencies` in your `bsconfig.json`:
