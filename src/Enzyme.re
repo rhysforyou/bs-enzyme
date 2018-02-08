@@ -140,4 +140,16 @@ type js_obj_with_adapter = {. "adapter": adapter};
 
 [@bs.module] [@bs.new] external react_16_adapter : unit => adapter = "enzyme-adapter-react-16";
 
+[@bs.module] [@bs.new] external react_15_adapter : unit => adapter = "enzyme-adapter-react-15";
+
+[@bs.module] [@bs.new] external react_15_4_adapter : unit => adapter = "enzyme-adapter-react-15.4";
+
+[@bs.module] [@bs.new] external react_14_adapter : unit => adapter = "enzyme-adapter-react-14";
+
+[@bs.module] [@bs.new] external react_13_adapter : unit => adapter = "enzyme-adapter-react-13";
+
+[@bs.module] [@bs.new] external preact_adapter : unit => adapter = "preact-enzyme-adapter";
+
+[@bs.module] [@bs.new] external inferno_adapter : unit => adapter = "enzyme-adapter-inferno";
+
 let configureEnzyme = (adapter: adapter) => configure({"adapter": adapter});
