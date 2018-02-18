@@ -80,7 +80,7 @@ npm install --save-dev bs-enzyme enzyme-adapter-react-16
 With Yarn:
 
 ```sh
-yarn add bs-enzyme enzyme-adapter-react-16
+yarn add --dev bs-enzyme enzyme-adapter-react-16
 ```
 
 Then add `bs-enzyme` to `bs-dev-dependencies` in your `bsconfig.json`:
