@@ -2,8 +2,8 @@ open Jest;
 
 Enzyme.configureEnzyme(Enzyme.react_16_adapter());
 
-let setup = (~title="Test", ~handleClick=(_evt) => (), ()) =>
-  Enzyme.shallow(<DummyComponent title handleClick />);
+let setup = (~title="Test", ()) =>
+  Enzyme.shallow(<DummyComponent title />);
 
 let header = (wrapper) =>
 wrapper
@@ -63,5 +63,5 @@ describe("DummyComponent", () => {
     let items = setup() |> listItems;
     let result = Enzyme.foldRight((text, node) => text ++ Enzyme.text(node), "", items);
     expect(result) |> toBe("ThreeTwoOne")
-  })
+  });
 });
