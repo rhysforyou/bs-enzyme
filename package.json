@@ -3,7 +3,8 @@
   "version": "0.4.0",
   "description": "Bucklescript bindings for Enzyme",
   "scripts": {
-    "test": "jest --watch",
+    "test": "jest",
+    "jest": "jest --watch",
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
     "clean": "bsb -clean-world"
