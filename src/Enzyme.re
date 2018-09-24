@@ -25,8 +25,6 @@ module Impl = {
 
   [@bs.send.pipe: t] external containsAnyMatchingElements: array(node) => bool = "containsAnyMatchingElements";
 
-  [@bs.send.pipe: t] external equals: node => bool = "equals";
-
   [@bs.send.pipe: t] external matchesElement: node => bool = "matchesElement";
 
   [@bs.send.pipe: t] external hasClass: string => bool = "hasClass";
@@ -125,9 +123,23 @@ module Impl = {
 
 module Shallow = {
   include Impl;
+
+  [@bs.send.pipe: t] external equals: node => bool = "equals";
+
+  /* TODO: 
+  .getElement() => ReactElement
+  .getElements() => Array<ReactElement> */
+};
+
+module Mount = {
+  include Impl;
+
+  /* TODO: .getDOMNode() => DOMComponent */
 };
 
 [@bs.module "enzyme"] external shallow: node => Shallow.t = "";
+
+[@bs.module "enzyme"] external mount: node => Mount.t = "";
 
 type adapter;
 
