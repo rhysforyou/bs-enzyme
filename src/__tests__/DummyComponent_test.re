@@ -35,7 +35,7 @@ describe("DummyComponent", () => {
   test("has the expected h1 tag in the #header", () => {
     let title = "A test title";
     let wrapper = setup(~title, ());
-    let expectedNode = <h1> (ReasonReact.stringToElement(title)) </h1>;
+    let expectedNode = <h1> (ReasonReact.string(title)) </h1>;
     expect(Enzyme.contains(expectedNode, wrapper)) |> toBe(true)
   });
 
@@ -43,7 +43,7 @@ describe("DummyComponent", () => {
     let title = "A test title";
     let header = setup(~title, ()) |> header;
     let expectedNode =
-      <div id="header"> <h1> (ReasonReact.stringToElement(title)) </h1> </div>;
+      <div id="header"> <h1> (ReasonReact.string(title)) </h1> </div>;
     expect(Enzyme.equals(expectedNode, header)) |> toBe(true)
   });
 

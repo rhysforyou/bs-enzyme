@@ -3,7 +3,7 @@ type state = {clicked: bool};
 type action = 
   | Click;
 
-let se = ReasonReact.stringToElement;
+let se = ReasonReact.string;
 
 let component = ReasonReact.reducerComponent("DummyComponent");
 
