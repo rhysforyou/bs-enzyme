@@ -1,8 +1,8 @@
-# bs-enzyme 
+# bs-enzyme
 
 [![Travis](https://img.shields.io/travis/rhysforyou/bs-enzyme.svg?style=flat-square)](https://travis-ci.org/rhysforyou/bs-enzyme) [![npm (scoped)](https://img.shields.io/npm/v/bs-enzyme.svg?style=flat-square)](https://www.npmjs.com/package/bs-enzyme)
 
-[BuckleScript](https://github.com/bucklescript/bucklescript) bindings for [Enzyme](https://github.com/airbnb/enzyme) 
+[BuckleScript](https://github.com/bucklescript/bucklescript) bindings for [Enzyme](https://github.com/airbnb/enzyme)
 
 :construction: **Note:** This package is still _very_ experimental. Expect
 frequent, breaking changes right up until 1.0 is released. :construction:
@@ -11,11 +11,11 @@ frequent, breaking changes right up until 1.0 is released. :construction:
 
 ## Status
 
-* Most of the `shallow` API is implemented
-* The `simulate` method is currently wrapped in multiple `simulateN` functions
+- Most of the `shallow` and `mount` APIs are implemented
+- The `simulate` method is currently wrapped in multiple `simulateN` functions
   to handle mixed variadic arguments
-* Neither the `render` nor `mount` APIs are implemented
-* I haven't extensively tested most of the functions, so some might be broken
+- The `render` API isn't implemented
+- I haven't extensively tested most of the functions, so some might be broken
 
 ## Example
 
