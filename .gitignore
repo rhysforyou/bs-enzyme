@@ -3,3 +3,4 @@
 .merlin
 npm-debug.log
 public/*.js
+.bsb.lock
