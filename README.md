@@ -31,13 +31,13 @@ let setup = (~title="Test", ~handleClick=(_evt) => (), ()) =>
 
 let header = (wrapper) =>
 wrapper
-  |> Enzyme.find("#header")
-  |> Enzyme.first;
+  |> Enzyme.Shallow.find("#header")
+  |> Enzyme.Shallow.first;
 
 let listItems = (wrapper) =>
   wrapper
   |> Enzyme.find("#list")
-  |> Enzyme.children;
+  |> Enzyme.Shallow.children;
 
 describe("DummyComponent", () => {
   open Expect;
@@ -46,25 +46,25 @@ describe("DummyComponent", () => {
     let title = "A test title";
     let wrapper = setup(~title, ());
     let headerNodes = wrapper |> header;
-    expect(Enzyme.length(headerNodes)) |> toBe(1)
+    expect(Enzyme.Shallow.length(headerNodes)) |> toBe(1)
   });
 
   test("has the expected h1 tag in the #header", () => {
     let title = "A test title";
     let wrapper = setup(~title, ());
     let expectedNode = <h1> (ReasonReact.stringToElement(title)) </h1>;
-    expect(Enzyme.contains(expectedNode, wrapper)) |> toBe(true)
+    expect(Enzyme.Shallow.contains(expectedNode, wrapper)) |> toBe(true)
   });
 
   test("initially has its `clicked` state set to false", () => {
     let wrapper = setup();
-    let {clicked}: DummyComponent.state = Enzyme.state(wrapper);
+    let {clicked}: DummyComponent.state = Enzyme.Shallow.state(wrapper);
     expect(clicked) |> toBe(false)
   });
 
   test("folds left properly", () => {
     let items = setup() |> listItems;
-    let result = Enzyme.foldLeft((text, node) => text ++ Enzyme.text(node), "", items);
+    let result = Enzyme.Shallow.foldLeft((text, node) => text ++ Enzyme.Shallow.text(node), "", items);
     expect(result) |> toBe("OneTwoThree")
   });
 });
