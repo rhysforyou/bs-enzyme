@@ -36,7 +36,7 @@ wrapper
 
 let listItems = (wrapper) =>
   wrapper
-  |> Enzyme.find("#list")
+  |> Enzyme.Shallow.find("#list")
   |> Enzyme.Shallow.children;
 
 describe("DummyComponent", () => {
