@@ -1,10 +1,10 @@
 language: node_js
 node_js:
-  - "7"
+  - '7'
 
-script:
-  - npm run build
+before_script: npm run build
+script: npm run test
 
 cache:
   directories:
-      - node_modules
+    - node_modules
