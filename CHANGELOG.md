@@ -50,10 +50,10 @@ This release brings support for React 16 and Enzyme 3 thanks to @viebel's help. 
 - `Enzyme.foldLeft` and `Enzyme.foldRight` have been added as wrappers around `shallowWrapper`'s `reduce` and `reduceRight` methods.
 - `Enzyme.state` now returns a component's `reasonState`
 
-[unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.5.3...HEAD
-[0.5.3]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.5.2...v0.5.3
-[0.5.2]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.5.0...v0.5.2
-[0.5.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.4.0...v0.5.0
-[0.4.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.3.0...v0.4.0
-[0.3.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.2.0...v0.3.0
-[0.2.0]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.1.1...v0.2.0
+[unreleased]: https://github.com/rhysforyou/bs-enzyme/compare/v0.5.3...HEAD
+[0.5.3]: https://github.com/rhysforyou/bs-enzyme/compare/v0.5.2...v0.5.3
+[0.5.2]: https://github.com/rhysforyou/bs-enzyme/compare/v0.5.0...v0.5.2
+[0.5.0]: https://github.com/rhysforyou/bs-enzyme/compare/v0.4.0...v0.5.0
+[0.4.0]: https://github.com/rhysforyou/bs-enzyme/compare/v0.3.0...v0.4.0
+[0.3.0]: https://github.com/rhysforyou/bs-enzyme/compare/v0.2.0...v0.3.0
+[0.2.0]: https://github.com/rhysforyou/bs-enzyme/compare/v0.1.1...v0.2.0
