@@ -4,6 +4,14 @@
   "bs-dependencies": ["reason-react"],
   "bs-dev-dependencies": ["@glennsl/bs-jest"],
   "bsc-flags": ["-bs-super-errors"],
-  "sources": [{ "dir": "src" }, { "dir": "src/__tests__", "type": "dev" }],
+  "sources": [
+    {
+      "dir": "src"
+    },
+    {
+      "dir": "src/__tests__",
+      "type": "dev"
+    }
+  ],
   "refmt": 3
 }
