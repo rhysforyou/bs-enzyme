@@ -31,6 +31,8 @@ module Renderer = {
   [@bs.send] external text : t => string = "text";
   [@bs.send] external html : t => string = "html";
   [@bs.send.pipe : t] external get : int => node = "get";
+  [@bs.send] external getElement : t => node = "getElement";
+  [@bs.send] external getElements : t => array(node) = "getElements";
   [@bs.send] external getNode : t => node = "getNode";
   [@bs.send] external getNodes : t => array(node) = "getNodes";
   [@bs.send.pipe : t] external at : int => t = "at";
