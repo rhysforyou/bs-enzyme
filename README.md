@@ -67,6 +67,12 @@ describe("DummyComponent", () => {
     let result = Enzyme.Shallow.foldLeft((text, node) => text ++ Enzyme.Shallow.text(node), "", items);
     expect(result) |> toBe("OneTwoThree")
   });
+
+  test("maps properly", () => {
+    let items = setup() |> listItems;
+    let result = Enzyme.Shallow.map(node => Enzyme.Shallow.text(node), items);
+    expect(result) |> toEqual([|"One", "Two", "Three"|])
+  });
 });
 ```
 
