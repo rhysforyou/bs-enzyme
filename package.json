@@ -1,6 +1,6 @@
 {
   "name": "bs-enzyme",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "Bucklescript bindings for Enzyme",
   "scripts": {
     "test": "jest",
