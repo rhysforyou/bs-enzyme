@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.6.1][0.6.1] 2019-02-01
+
+### [Fixed]
+
+- An issue where bs-enzyme's `map` function was incorrectly bound to enzyme's `forEach` method was resolved thanks to [@mkamener](https://github.com/mkamener) (see [#17](https://github.com/rhysforyou/bs-enzyme/pull/17))
+
 ## [0.6.0][0.6.0] 2019-01-08
 
 ### Added
@@ -56,7 +62,8 @@ This release brings support for React 16 and Enzyme 3 thanks to @viebel's help. 
 - `Enzyme.foldLeft` and `Enzyme.foldRight` have been added as wrappers around `shallowWrapper`'s `reduce` and `reduceRight` methods.
 - `Enzyme.state` now returns a component's `reasonState`
 
-[unreleased]: https://github.com/rhysforyou/bs-enzyme/compare/v0.6.0...HEAD
+[unreleased]: https://github.com/rhysforyou/bs-enzyme/compare/v0.6.1...HEAD
+[0.6.1]: https://github.com/rhysforyou/bs-enzyme/compare/v0.6.0...v0.6.1
 [0.6.0]: https://github.com/rhysforyou/bs-enzyme/compare/v0.5.3...v0.6.0
 [0.5.3]: https://github.com/rhysforyou/bs-enzyme/compare/v0.5.2...v0.5.3
 [0.5.2]: https://github.com/rhysforyou/bs-enzyme/compare/v0.5.0...v0.5.2
