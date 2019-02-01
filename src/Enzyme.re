@@ -62,7 +62,7 @@ module Renderer = {
   [@bs.send] external type_ : t => string = "type";
   [@bs.send] external name : t => string = "name";
   [@bs.send.pipe : t] external forEach : (t => unit) => t = "forEach";
-  [@bs.send.pipe : t] external map : (t => 'a) => array('a) = "forEach";
+  [@bs.send.pipe : t] external map : (t => 'a) => array('a) = "map";
   [@bs.send.pipe : t] external foldLeft : (('a, t) => 'a, 'a) => 'a = "reduce";
   [@bs.send.pipe : t] external foldRight : (('a, t) => 'a, 'a) => 'a = "reduceRight";
   [@bs.get] external length : t => int = "length";

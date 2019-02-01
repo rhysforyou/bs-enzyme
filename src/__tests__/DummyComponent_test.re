@@ -82,6 +82,18 @@ describe(
               );
             expect(result) |> toBe("ThreeTwoOne")
           }
+        );
+        test(
+          "maps properly",
+          () => {
+            let items = setup() |> listItems;
+            let result =
+              Enzyme.Shallow.map(
+                node => Enzyme.Shallow.text(node),
+                items
+              );
+            expect(result) |> toEqual([|"One", "Two", "Three"|])
+          }
         )
       }
     )
