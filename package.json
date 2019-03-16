@@ -25,6 +25,7 @@
   },
   "homepage": "https://github.com/rpowelll/bs-enzyme#readme",
   "devDependencies": {
+    "@babel/preset-env": "7.3.4",
     "@glennsl/bs-jest": "0.4.8",
     "bs-platform": "4.0.18",
     "enzyme-adapter-react-16": "1.11.2",
@@ -40,10 +41,5 @@
   "peerDependencies": {
     "bs-platform": ">=4.0.0",
     "reason-react": ">=0.5.0"
-  },
-  "jest": {
-    "testMatch": [
-      "**/src/**/*_test.js"
-    ]
   }
 }

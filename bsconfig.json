@@ -4,6 +4,10 @@
   "bs-dependencies": ["reason-react"],
   "bs-dev-dependencies": ["@glennsl/bs-jest"],
   "bsc-flags": ["-bs-super-errors"],
+  "package-specs": [{
+    "module": "es6",
+    "in-source": true
+  }],
   "sources": [
     {
       "dir": "src"
