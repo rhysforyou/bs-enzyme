@@ -8,7 +8,8 @@
     "jest": "jest --watch",
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
-    "clean": "bsb -clean-world"
+    "clean": "bsb -clean-world",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -33,7 +34,8 @@
     "jest": "24.5.0",
     "react": "16.8.4",
     "react-dom": "16.8.4",
-    "reason-react": "0.6.0"
+    "reason-react": "0.6.0",
+    "standard-version": "5.0.1"
   },
   "dependencies": {
     "enzyme": "3.9.0",
