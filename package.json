@@ -3,6 +3,7 @@
   "version": "0.6.1",
   "description": "Bucklescript bindings for Enzyme",
   "scripts": {
+    "pretest": "npm run build",
     "test": "jest",
     "jest": "jest --watch",
     "build": "bsb -make-world",
