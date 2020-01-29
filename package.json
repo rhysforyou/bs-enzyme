@@ -3,11 +3,13 @@
   "version": "0.6.1",
   "description": "Bucklescript bindings for Enzyme",
   "scripts": {
+    "pretest": "npm run build",
     "test": "jest",
     "jest": "jest --watch",
     "build": "bsb -make-world",
     "watch": "bsb -make-world -w",
-    "clean": "bsb -clean-world"
+    "clean": "bsb -clean-world",
+    "release": "standard-version"
   },
   "repository": {
     "type": "git",
@@ -25,25 +27,22 @@
   },
   "homepage": "https://github.com/rpowelll/bs-enzyme#readme",
   "devDependencies": {
-    "@glennsl/bs-jest": "^0.4.5",
-    "bs-platform": "^4.0.7",
-    "enzyme-adapter-react-16": "^1.6.0",
-    "jest": "^23.6.0",
-    "react": "^16.6.0",
-    "react-dom": "^16.6.0",
-    "reason-react": "0.5.3"
+    "@babel/preset-env": "7.3.4",
+    "@glennsl/bs-jest": "0.4.8",
+    "bs-platform": "4.0.18",
+    "enzyme-adapter-react-16": "1.11.2",
+    "jest": "24.5.0",
+    "react": "16.8.4",
+    "react-dom": "16.8.4",
+    "reason-react": "0.6.0",
+    "standard-version": "5.0.1"
   },
   "dependencies": {
-    "enzyme": "^3.7.0",
-    "react-test-renderer": "^16.6.0"
+    "enzyme": "3.9.0",
+    "react-test-renderer": "16.8.4"
   },
   "peerDependencies": {
     "bs-platform": ">=4.0.0",
     "reason-react": ">=0.5.0"
-  },
-  "jest": {
-    "testMatch": [
-      "**/src/**/*_test.js"
-    ]
   }
 }
