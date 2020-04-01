@@ -66,6 +66,7 @@ module Renderer = {
   [@bs.send.pipe : t] external foldLeft : (('a, t) => 'a, 'a) => 'a = "reduce";
   [@bs.send.pipe : t] external foldRight : (('a, t) => 'a, 'a) => 'a = "reduceRight";
   [@bs.get] external length : t => int = "length";
+  [@bs.send] external hostNodes : t => t = "hostNodes";
 };
 
 module Shallow = {
