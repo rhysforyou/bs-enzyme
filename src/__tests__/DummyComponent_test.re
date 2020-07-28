@@ -53,8 +53,10 @@ describe(
           "initially has its `clicked` state set to false",
           () => {
             let wrapper = setup();
-            let {clicked}: DummyComponent.state = Enzyme.Shallow.state(wrapper);
-            expect(clicked) |> toBe(false)
+            let button = wrapper |> Enzyme.Shallow.find("#click-me");
+            let buttonText = button |> Enzyme.Shallow.text;
+            expect(buttonText) |> toEqual("Click Me!");
+
           }
         );
         test(
@@ -141,8 +143,9 @@ describe(
           "initially has its `clicked` state set to false",
           () => {
             let wrapper = setup();
-            let {clicked}: DummyComponent.state = Enzyme.Mount.state(wrapper);
-            expect(clicked) |> toBe(false)
+            let button = wrapper |> Enzyme.Mount.find("#click-me");
+            let buttonText = button |> Enzyme.Mount.text
+            expect(buttonText) |> toEqual("Click Me!")
           }
         );
         test(
