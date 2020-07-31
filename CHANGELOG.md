@@ -18,6 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### BREAKING CHANGES
 
 * **build:** As output JavaScript has  ES6 module format now, supporting ES5 targets requires additional transpilation.
+* **deps:** Updated to use JSX 3 and bs-platform@8 by @erykilast (see [#29](https://github.com/rhysforyou/bs-enzyme/pull/29))
 
 ## [0.6.1][0.6.1] 2019-02-01
 
