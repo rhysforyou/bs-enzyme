@@ -27,22 +27,22 @@
   },
   "homepage": "https://github.com/rpowelll/bs-enzyme#readme",
   "devDependencies": {
-    "@babel/preset-env": "7.3.4",
-    "@glennsl/bs-jest": "0.4.8",
-    "bs-platform": "4.0.18",
-    "enzyme-adapter-react-16": "1.11.2",
-    "jest": "24.5.0",
-    "react": "16.8.4",
-    "react-dom": "16.8.4",
-    "reason-react": "0.6.0",
-    "standard-version": "8.0.1"
+    "@babel/preset-env": "7.10.4",
+    "@glennsl/bs-jest": "0.5.1",
+    "bs-platform": "8.0.3",
+    "enzyme-adapter-react-16": "1.15.2",
+    "jest": "26.1.0",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "reason-react": "0.9.1",
+    "standard-version": "8.0.2"
   },
   "dependencies": {
-    "enzyme": "3.9.0",
-    "react-test-renderer": "16.8.4"
+    "enzyme": "3.11.0",
+    "react-test-renderer": "16.13.1"
   },
   "peerDependencies": {
-    "bs-platform": ">=4.0.0",
-    "reason-react": ">=0.5.0"
+    "bs-platform": ">=8.0.0",
+    "reason-react": ">=0.9.0"
   }
 }

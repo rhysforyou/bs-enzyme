@@ -1,6 +1,6 @@
 {
   "name": "bs-enzyme",
-  "reason": { "react-jsx": 2 },
+  "reason": { "react-jsx": 3 },
   "bs-dependencies": ["reason-react"],
   "bs-dev-dependencies": ["@glennsl/bs-jest"],
   "bsc-flags": ["-bs-super-errors"],
