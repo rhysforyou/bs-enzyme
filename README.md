@@ -4,8 +4,7 @@
 
 [BuckleScript](https://github.com/bucklescript/bucklescript) bindings for [Enzyme](https://github.com/airbnb/enzyme)
 
-:construction: **Note:** This package is still _very_ experimental. Expect
-frequent, breaking changes right up until 1.0 is released. :construction:
+⚠️ **Note:** This package is deprecated. It's recommended that you instead use [Reason Testing Library](https://testing-library.com/docs/bs-react-testing-library/intro/). ⚠️
 
 ---
 
